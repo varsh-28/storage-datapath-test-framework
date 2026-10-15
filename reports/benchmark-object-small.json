@@ -1,0 +1,205 @@
+{
+  "storage_type": "S3-compatible object storage (MinIO)",
+  "environment": {
+    "platform": "Windows-11-10.0.26100-SP0",
+    "endpoint": "configured through S3_ENDPOINT_URL"
+  },
+  "configuration": {
+    "files": 100,
+    "size_mib": 1,
+    "workers": 8,
+    "trials": 5,
+    "output": "reports\\benchmark-object-small.json"
+  },
+  "summary": {
+    "write": {
+      "median_throughput_mib_per_sec": 90.633,
+      "median_iops": 90.633,
+      "median_latency_ms": {
+        "p50": 84.349,
+        "p95": 108.6
+      }
+    },
+    "read": {
+      "median_throughput_mib_per_sec": 110.716,
+      "median_iops": 110.716,
+      "median_latency_ms": {
+        "p50": 64.766,
+        "p95": 87.391
+      }
+    }
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "files": 100,
+      "file_size_mib": 1,
+      "workers": 8,
+      "write": {
+        "elapsed_seconds": 1.2193,
+        "throughput_mib_per_sec": 82.013,
+        "iops": 82.013,
+        "latency_ms": {
+          "min": 51.892,
+          "mean": 93.632,
+          "p50": 84.349,
+          "p95": 166.202,
+          "max": 216.4
+        }
+      },
+      "read": {
+        "elapsed_seconds": 1.1558,
+        "throughput_mib_per_sec": 86.524,
+        "iops": 86.524,
+        "latency_ms": {
+          "min": 33.673,
+          "mean": 87.46,
+          "p50": 82.934,
+          "p95": 127.272,
+          "max": 157.872
+        }
+      },
+      "integrity": {
+        "checked": 100,
+        "failures": 0
+      }
+    },
+    {
+      "trial": 2,
+      "files": 100,
+      "file_size_mib": 1,
+      "workers": 8,
+      "write": {
+        "elapsed_seconds": 1.0136,
+        "throughput_mib_per_sec": 98.663,
+        "iops": 98.663,
+        "latency_ms": {
+          "min": 35.853,
+          "mean": 77.826,
+          "p50": 78.516,
+          "p95": 100.527,
+          "max": 107.7
+        }
+      },
+      "read": {
+        "elapsed_seconds": 0.9032,
+        "throughput_mib_per_sec": 110.716,
+        "iops": 110.716,
+        "latency_ms": {
+          "min": 36.034,
+          "mean": 67.202,
+          "p50": 64.766,
+          "p95": 87.391,
+          "max": 123.533
+        }
+      },
+      "integrity": {
+        "checked": 100,
+        "failures": 0
+      }
+    },
+    {
+      "trial": 3,
+      "files": 100,
+      "file_size_mib": 1,
+      "workers": 8,
+      "write": {
+        "elapsed_seconds": 1.1034,
+        "throughput_mib_per_sec": 90.633,
+        "iops": 90.633,
+        "latency_ms": {
+          "min": 37.98,
+          "mean": 85.312,
+          "p50": 88.893,
+          "p95": 108.6,
+          "max": 117.928
+        }
+      },
+      "read": {
+        "elapsed_seconds": 0.9246,
+        "throughput_mib_per_sec": 108.154,
+        "iops": 108.154,
+        "latency_ms": {
+          "min": 33.693,
+          "mean": 68.856,
+          "p50": 67.765,
+          "p95": 94.002,
+          "max": 99.714
+        }
+      },
+      "integrity": {
+        "checked": 100,
+        "failures": 0
+      }
+    },
+    {
+      "trial": 4,
+      "files": 100,
+      "file_size_mib": 1,
+      "workers": 8,
+      "write": {
+        "elapsed_seconds": 1.1174,
+        "throughput_mib_per_sec": 89.494,
+        "iops": 89.494,
+        "latency_ms": {
+          "min": 31.832,
+          "mean": 84.804,
+          "p50": 91.119,
+          "p95": 109.133,
+          "max": 112.663
+        }
+      },
+      "read": {
+        "elapsed_seconds": 0.8348,
+        "throughput_mib_per_sec": 119.788,
+        "iops": 119.788,
+        "latency_ms": {
+          "min": 36.271,
+          "mean": 61.708,
+          "p50": 62.119,
+          "p95": 76.797,
+          "max": 89.135
+        }
+      },
+      "integrity": {
+        "checked": 100,
+        "failures": 0
+      }
+    },
+    {
+      "trial": 5,
+      "files": 100,
+      "file_size_mib": 1,
+      "workers": 8,
+      "write": {
+        "elapsed_seconds": 1.048,
+        "throughput_mib_per_sec": 95.424,
+        "iops": 95.424,
+        "latency_ms": {
+          "min": 47.905,
+          "mean": 81.116,
+          "p50": 79.67,
+          "p95": 101.918,
+          "max": 113.231
+        }
+      },
+      "read": {
+        "elapsed_seconds": 0.8756,
+        "throughput_mib_per_sec": 114.211,
+        "iops": 114.211,
+        "latency_ms": {
+          "min": 28.882,
+          "mean": 64.861,
+          "p50": 64.555,
+          "p95": 84.286,
+          "max": 98.235
+        }
+      },
+      "integrity": {
+        "checked": 100,
+        "failures": 0
+      }
+    }
+  ],
+  "integrity_verified": true
+}

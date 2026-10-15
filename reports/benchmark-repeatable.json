@@ -1,0 +1,273 @@
+{
+  "configuration": {
+    "files": 100,
+    "file_size_mib": 1,
+    "workers": 8,
+    "trials": 5
+  },
+  "summary": {
+    "write": {
+      "median_throughput_mib_per_sec": 458.778,
+      "median_iops": 458.78,
+      "median_latency_ms": {
+        "p50": 16.337,
+        "p95": 27.639
+      }
+    },
+    "read": {
+      "median_throughput_mib_per_sec": 474.343,
+      "median_iops": 474.34,
+      "median_latency_ms": {
+        "p50": 13.371,
+        "p95": 20.929
+      }
+    }
+  },
+  "trials": [
+    {
+      "configuration": {
+        "storage_path": "C:\\Users\\HP\\AppData\\Local\\Temp\\storage-benchmark-ehjh3wa4",
+        "files": 100,
+        "file_size_bytes": 1048576,
+        "workers": 8,
+        "write_uses_fsync": true,
+        "read_checksum_validation": "SHA-256"
+      },
+      "write": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.224,
+        "throughput_mib_per_sec": 446.378,
+        "iops": 446.38,
+        "latency_ms": {
+          "min": 5.683,
+          "mean": 17.081,
+          "p50": 16.337,
+          "p95": 28.32,
+          "max": 33.67
+        }
+      },
+      "read": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.31,
+        "throughput_mib_per_sec": 322.576,
+        "iops": 322.58,
+        "latency_ms": {
+          "min": 10.816,
+          "mean": 21.058,
+          "p50": 14.562,
+          "p95": 68.359,
+          "max": 117.009
+        }
+      },
+      "integrity": {
+        "verified_files": 100,
+        "failed_files": 0,
+        "status": "PASS"
+      },
+      "notes": [
+        "Write latency includes the client's file fsync.",
+        "Read results may benefit from the operating system cache.",
+        "Results describe this filesystem and environment, not a storage array."
+      ],
+      "trial": 1
+    },
+    {
+      "configuration": {
+        "storage_path": "C:\\Users\\HP\\AppData\\Local\\Temp\\storage-benchmark-4fp7cm3c",
+        "files": 100,
+        "file_size_bytes": 1048576,
+        "workers": 8,
+        "write_uses_fsync": true,
+        "read_checksum_validation": "SHA-256"
+      },
+      "write": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.218,
+        "throughput_mib_per_sec": 458.778,
+        "iops": 458.78,
+        "latency_ms": {
+          "min": 7.485,
+          "mean": 16.95,
+          "p50": 16.959,
+          "p95": 27.639,
+          "max": 31.138
+        }
+      },
+      "read": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.1976,
+        "throughput_mib_per_sec": 505.95,
+        "iops": 505.95,
+        "latency_ms": {
+          "min": 9.152,
+          "mean": 13.46,
+          "p50": 13.056,
+          "p95": 18.563,
+          "max": 26.475
+        }
+      },
+      "integrity": {
+        "verified_files": 100,
+        "failed_files": 0,
+        "status": "PASS"
+      },
+      "notes": [
+        "Write latency includes the client's file fsync.",
+        "Read results may benefit from the operating system cache.",
+        "Results describe this filesystem and environment, not a storage array."
+      ],
+      "trial": 2
+    },
+    {
+      "configuration": {
+        "storage_path": "C:\\Users\\HP\\AppData\\Local\\Temp\\storage-benchmark-_t4n15rb",
+        "files": 100,
+        "file_size_bytes": 1048576,
+        "workers": 8,
+        "write_uses_fsync": true,
+        "read_checksum_validation": "SHA-256"
+      },
+      "write": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.209,
+        "throughput_mib_per_sec": 478.562,
+        "iops": 478.56,
+        "latency_ms": {
+          "min": 6.123,
+          "mean": 15.948,
+          "p50": 15.69,
+          "p95": 23.693,
+          "max": 25.809
+        }
+      },
+      "read": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.1899,
+        "throughput_mib_per_sec": 526.661,
+        "iops": 526.66,
+        "latency_ms": {
+          "min": 9.481,
+          "mean": 12.836,
+          "p50": 12.48,
+          "p95": 16.468,
+          "max": 19.26
+        }
+      },
+      "integrity": {
+        "verified_files": 100,
+        "failed_files": 0,
+        "status": "PASS"
+      },
+      "notes": [
+        "Write latency includes the client's file fsync.",
+        "Read results may benefit from the operating system cache.",
+        "Results describe this filesystem and environment, not a storage array."
+      ],
+      "trial": 3
+    },
+    {
+      "configuration": {
+        "storage_path": "C:\\Users\\HP\\AppData\\Local\\Temp\\storage-benchmark-06aisido",
+        "files": 100,
+        "file_size_bytes": 1048576,
+        "workers": 8,
+        "write_uses_fsync": true,
+        "read_checksum_validation": "SHA-256"
+      },
+      "write": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.2266,
+        "throughput_mib_per_sec": 441.277,
+        "iops": 441.28,
+        "latency_ms": {
+          "min": 6.961,
+          "mean": 17.582,
+          "p50": 17.453,
+          "p95": 28.783,
+          "max": 29.95
+        }
+      },
+      "read": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.2108,
+        "throughput_mib_per_sec": 474.343,
+        "iops": 474.34,
+        "latency_ms": {
+          "min": 10.109,
+          "mean": 14.488,
+          "p50": 13.371,
+          "p95": 21.997,
+          "max": 31.605
+        }
+      },
+      "integrity": {
+        "verified_files": 100,
+        "failed_files": 0,
+        "status": "PASS"
+      },
+      "notes": [
+        "Write latency includes the client's file fsync.",
+        "Read results may benefit from the operating system cache.",
+        "Results describe this filesystem and environment, not a storage array."
+      ],
+      "trial": 4
+    },
+    {
+      "configuration": {
+        "storage_path": "C:\\Users\\HP\\AppData\\Local\\Temp\\storage-benchmark-62orfdq9",
+        "files": 100,
+        "file_size_bytes": 1048576,
+        "workers": 8,
+        "write_uses_fsync": true,
+        "read_checksum_validation": "SHA-256"
+      },
+      "write": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.2009,
+        "throughput_mib_per_sec": 497.734,
+        "iops": 497.73,
+        "latency_ms": {
+          "min": 7.442,
+          "mean": 15.652,
+          "p50": 15.189,
+          "p95": 23.876,
+          "max": 28.759
+        }
+      },
+      "read": {
+        "operations": 100,
+        "total_bytes": 104857600,
+        "elapsed_seconds": 0.2136,
+        "throughput_mib_per_sec": 468.175,
+        "iops": 468.18,
+        "latency_ms": {
+          "min": 10.936,
+          "mean": 14.742,
+          "p50": 13.855,
+          "p95": 20.929,
+          "max": 32.905
+        }
+      },
+      "integrity": {
+        "verified_files": 100,
+        "failed_files": 0,
+        "status": "PASS"
+      },
+      "notes": [
+        "Write latency includes the client's file fsync.",
+        "Read results may benefit from the operating system cache.",
+        "Results describe this filesystem and environment, not a storage array."
+      ],
+      "trial": 5
+    }
+  ]
+}
